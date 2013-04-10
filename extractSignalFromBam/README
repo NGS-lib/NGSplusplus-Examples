@@ -1,0 +1,6 @@
+This sample takes a bed file and indexed BAM file as input and will extract the density signal from the BAM file. It contains an example of a bamReader usage
+As it only loads the data for one region at a time, the memory requirements are fairly low, unless the desired regions are very large.
+
+The sample uses the TCLAP ( http://tclap.sourceforge.net/ ) library to manage the command line arguments and you will need to make the files available if you wish to build. 
+
+The sample is not robust and may collapse for any number of reasons, including not providing the index file for the BAM file ( see samtools or bamtools to index your BAM file )
